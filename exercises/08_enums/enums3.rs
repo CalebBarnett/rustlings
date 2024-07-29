@@ -5,6 +5,11 @@ struct Point {
 
 enum Message {
     // TODO: Implement the message variant types based on their usage below.
+    Resize {width: i32, height: i32},
+    Move(Point),
+    Echo(String),
+    ChangeColor(i32, i32, i32),
+    Quit,
 }
 
 struct State {
